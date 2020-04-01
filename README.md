@@ -1,4 +1,5 @@
 # TechBlog
+Note: You need to install django by pip install django or pip3 install django
 1. clone the repo
 2. cd BlogApp
 3. If you are on  linux activate virtualenv by source blog-env/bin/activate

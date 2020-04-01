@@ -1,0 +1,17 @@
+{% block blogcontent %}
+{% for post in post_list %}
+
+<div class="container-fluid">
+     <div class="card" style="width: 18rem;">
+  <h6 class="card-header">{{ post.title }}</h6>
+  <div class="card-body">
+    <h5 class="card-title">{{ post.title }}</h5>
+    <p class="card-text"> {{ post.content }} </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+{% endfor %}
+{% endblock blogcontent %}
+

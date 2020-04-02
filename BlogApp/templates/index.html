@@ -31,8 +31,9 @@
     </div>
 </header>
 
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        {# % block sidebar % #} {# % include 'sidebar.html' % #} {# % endblock sidebar % #} 
     
     {% block blogcontent %} {% include 'BlogContent.html' %}{% endblock blogcontent %}
 
+{% include 'BlogDetails.html' %}
 {% endblock %}

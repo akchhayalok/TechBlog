@@ -1,17 +1,12 @@
-{% block blogcontent %}
-{% for post in post_list %}
-
-<div class="container-fluid">
-     <div class="card" style="width: 18rem;">
-  <h6 class="card-header">{{ post.title }}</h6>
-  <div class="card-body">
-    <h5 class="card-title">{{ post.title }}</h5>
-    <p class="card-text"> {{ post.content }} </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-</div>
-{% endfor %}
-{% endblock blogcontent %}
-
+<div class="row">
+    {% for post in post_list %}
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-content white-text">
+              <span class="card-header">{{ post.title }}</span>
+              <p style="font-size:70%">Published {{post.created_on}}</p>
+              <div class="btn"><p>{{post.content|safe}}</p></div>
+            </div>
+          </div>
+        </div>
+    {% endfor %}

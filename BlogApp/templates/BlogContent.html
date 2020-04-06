@@ -6,6 +6,7 @@
               <span class="card-header">{{ post.title }}</span>
               <p style="font-size:70%">Published {{post.created_on}}</p>
               <div class="btn"><p>{{post.content|safe}}</p></div>
+              <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
             </div>
           </div>
         </div>
